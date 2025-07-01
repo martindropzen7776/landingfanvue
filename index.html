@@ -24,22 +24,30 @@
         font-weight: normal;
         font-style: normal;
     }
-
+        
 .landing {
     position: relative;
     width: 100%;
     height: 100vh;
     background-image: url('background.jpg');
-    background-size: contain; /* Cambiado de cover a contain */
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #000; /* Bordes arriba/abajo si la imagen no llena todo */
+    background-color: #000; /* Color de los bordes si hace falta */
     
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+
+/* Para móviles: mostrar la imagen entera aunque queden bordes */
+@media (max-width: 768px) {
+    .landing {
+        background-size: contain;
+    }
+}
+
 
 
     .title {
