@@ -25,19 +25,22 @@
         font-style: normal;
     }
 
-    .landing {
-        position: relative;
-        width: 100%;
-        height: 100vh;
-        background-image: url('background.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
+.landing {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('background.jpg');
+    background-size: contain; /* Cambiado de cover a contain */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #000; /* Bordes arriba/abajo si la imagen no llena todo */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 
     .title {
         font-family: 'MiFuente', sans-serif;
